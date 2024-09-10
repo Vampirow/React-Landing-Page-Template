@@ -5,15 +5,13 @@ export const Services = (props) => {
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Meus Serviços</h2>
-          <p>
-            Aqui estao alguns dos meus trabalhos feitos.
-          </p>
+          <h2>Meus Conhecimentos</h2>
+          <p>Aqui estao alguns dos meus conhecimentos adquiridos.</p>
         </div>
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
+                <div key={`${d.name}-${i}`} className="col-md-2">
                   {" "}
                   <i className={d.icon}></i>
                   <div className="service-desc">
